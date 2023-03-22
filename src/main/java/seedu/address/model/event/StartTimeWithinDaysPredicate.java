@@ -15,7 +15,7 @@ public class StartTimeWithinDaysPredicate implements Predicate<Event> {
 
     /**
      * Creates a predicate to test if an event is within the given {@code days} from
-     * the given {@code timeNow}.
+     * {@code timeNow} determined from the given {@code clock}.
      */
     public StartTimeWithinDaysPredicate(Clock clock, Integer days) {
         this.timeNow = LocalDateTime.now(clock);
